@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- USAR IBM SANS  -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form-style.css" />
+
+    <link rel="icon" type="icon" href="img/ico2.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>formulario</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="contenedor">
+
+            <encabezado></encabezado>
+            <main class="contenido">
+                <h1>¡Contactame!</h1>
+                <br>
+
+                <div>
+                    <!-- el modo put lo coloque en vez del tipico post o get por que me perimitia redireccionar 
+                        a la pagina sin tener q agregarle la funcionalidad del server -->
+                    <form action="gracias.html" method="put" target="_blank" id="formulario" class="formulario">
+                        <!-- decidi no utilizar textos sugeridos para evitar confuciones a la hora de encarar el formulario -->
+                        <label for="fname">Tu nombre:</label> <br>
+                        <!-- no me esta funcionando el autofocus -->
+                        <input type="text" id="fname" name="fname" required="required" autofocus><br><br>
+                        <label for="correoElectronico">Correo Electronico:</label>
+
+                        <input type="text" id="correoElectronico" name="correoElectronico" required="required"><br><br>
+                        <label for="asunto">Asunto:</label> <br>
+
+                        <input type="text" id="asunto" name="asunto" required="required"><br><br>
+                        <label for="message">Mensaje:</label>
+                        <br>
+
+                        <textarea name="message" required="required"></textarea>
+                        <br>
+                        <div id="btn-submit">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+
+            </main>
+            <!-- <pie></pie> -->
+            </div>
+        </div>
+
+        <script src="componentes.js"></script>
+        <script src="validaciones.js"></script>
+
+</body>
+
+</html>

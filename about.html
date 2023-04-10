@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- USAR IBM SANS  -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="icon" href="img/ico2.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>About</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="contenedor">
+            <!-- <div >
+            <button v-for="tab in tabs" v-bind:key="tab" v-bind:class="['tab-button', { active: currentTab === tab }]" v-on:click="currentTab = tab">{{ tab }}</button>
+
+            <component v-bind:is="currentTabComponent" class="tab"></component>
+        </div> -->
+            <encabezado></encabezado>
+            <main class="contenido">
+                <section>
+                    <h1>Santiago T. Fernández G. </h1>
+                    <br>
+                    <div class="about">
+                        <div class="centrar">
+                            <img src="img/portrait.jpg" alt="retrato">
+                        </div>
+                        <p class="statement">
+                            Soy docente, he transitado la formación en artes visuales en el ESEA Manuel Belgrano, a su vez curse la especialización en Educación por el Arte en el IVA (Instituto Vocacional de Arte), tengo una diplomatura en ESI de la UBA. Asistí a talleres de escritura
+                            con Margarita Roncarolo y de pintura con Horario y Silvina D´allesandro.
+                        </p>
+                        <p>
+                            Indago casi cualquier cosa que se me cruce por la cabeza, aunque trato de acortar el campo a la imagen, la palabra y la programación. Al día de hoy me encuentro cursando la Maestría de artes electrónicas de la UNTREF, asisto al Taller de ilustración de
+                            Monica Weiss y participo en un colectivo de poetxs. Participe en diversas muestras colectivas entre ellas: video poemas en 4º Festival de poesía NUDO (Barcelona, España) –con el colectivo La Palabra en la Boca (2020), Acción
+                            en el VIII encuentro de performance en el espacio Umbral (2018), Casona de la olivera como parte del ESEA Manuel Belgrano (2017).
+                        </p>
+                    </div>
+                </section>
+            </main>
+            <pie></pie>
+
+        </div>
+    </div>
+    <script src="componentes.js"></script>
+</body>
+
+</html>

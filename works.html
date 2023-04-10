@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- USAR IBM SANS  -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="icon" href="img/ico2.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Shaders</title>
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="contenedor">
+            <!-- <div >
+                <button v-for="tab in tabs" v-bind:key="tab" v-bind:class="['tab-button', { active: currentTab === tab }]" v-on:click="currentTab = tab">{{ tab }}</button>
+
+                <component v-bind:is="currentTabComponent" class="tab"></component>
+            </div> -->
+            <!-- <div v-if=></div> -->
+            <encabezado></encabezado>
+            <main class="contenido">
+                <h1>Shaders</h1>
+                <br>
+                <!-- <br>
+                <br> -->
+                <section>
+                    <!-- class="statement" -->
+                    <!-- <h2>¿Que son?</h2> -->
+                    <p>
+
+                        Los Shaders son una mezcla entre un proceso tecnico y un medio creativo. Piezas de codigo que pueden verse.
+                        <br> Nacidos del computo paralelo de pixeles, <a href="http://patriciogonzalezvivo.com/about.php" target="_blank">Patricio Gozales Vivo</a> los compara con
+                        <a href="https://thebookofshaders.com/01/?lan=es" target="_blank">la imprenta de Gutenberg</a> en su libro online
+                        <a href="https://thebookofshaders.com/" target="_blank">"The Book Of Shaders".</a>
+                        <br> Y quizas, si le preguntamos a <a href="https://iquilezles.org/" target="_blank">Inigo Quilez</a> sean algo asi como su video
+                        <a href="https://www.youtube.com/watch?v=8--5LwHRhjk" target="_blank">"pintar con matematicas"</a>
+
+                        <br> Personalmente creo que son practica que incorpora tanto una sensibilidad artistica como profundamente matematica y algo de logica de programacion.
+
+                    </p>
+                </section>
+
+                <hr>
+
+                <section>
+                    <!-- <article>
+                        <p>
+                            los shaders son instrucciones de codigo que se compilan para ser procesadas en las unidades graficas del hardware y no en los procesadores lo que los hace extremadamente rapidos pero complejos a la hora de programarlos y pensarlos.
+                            <br><br>
+                            <hr>
+                        </p>
+                    </article> -->
+                    <article>
+
+                        <div class="iframe  justificar-izq">
+                            <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/NsdSWj?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+                            <!-- <p></p> -->
+                            <p>este es mi primer shader</p>
+
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            los shaders se programan en un lenguaje heredero de C llamado <a href="https://es.wikipedia.org/wiki/OpenGL">openGL</a> sus instrucciones a diferencia de los programas que comunmente usamos se compilan para ser procesadas en
+                            las unidades graficas del hardware y no en los procesadores lo que los hace extremadamente rapidos pero complejos a la hora de pensarlos y debugearlos.
+                            <br><br>
+                            <hr>
+                        </p>
+                    </article>
+                    <article>
+
+                        <div class="iframe">
+
+                            <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/NddXWj?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+                            <p>una pequeña lampara de lava con shaders</p>
+
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            <br>Los shades son relativamente jovenes como tecnologia proximamente cumpliran treinta años, y nos acompañan al dia de hoy, desde la visualizacion de datos cientificos hasta en obras de artes multimidiales y videojuegos. <br><br>
+                            <hr>
+                        </p>
+                    </article>
+                    <article>
+
+                        <div class="iframe">
+                            <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/ssdSW2?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe> </div>
+
+                    </article>
+                    <article>
+                        <p>
+                            los shaders son instrucciones de codigo que se compilan para ser procesadas en las unidades graficas del hardware y no en los procesadores lo que los hace extremadamente rapidos pero complejos a la hora de programarlos y pensarlos.
+                            <br><br>
+                            <!-- <hr> -->
+                        </p>
+                    </article>
+                    <!-- 
+                    <p>
+                        Maecenas pharetra pretium quam ut posuere. Quisque luctus sem purus. Phasellus vel nibh sed erat interdum placerat eget a dui. Vivamus viverra pharetra congue. Sed pretium mi eu dui congue pulvinar. Donec felis risus, malesuada quis tristique faucibus,
+                        vestibulum non urna. Fusce nec orci pulvinar, blandit velit quis, finibus neque. Mauris malesuada metus eget ornare pellentesque. Nunc pharetra ante eget ullamcorper finibus. Orci varius natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus mus. Nulla maximus a dolor non condimentum. Suspendisse convallis ullamcorper justo.
+                        <br /><br /> Nullam ut erat sit amet elit ultricies tempor vel eget magna. Vivamus vitae diam purus. Fusce semper nisl a nulla congue feugiat. Maecenas et tincidunt felis, dapibus rhoncus sapien. Maecenas tortor tortor, sagittis
+                        ac mattis sed, ullamcorper et orci. Pellentesque quis mollis massa. Donec lacinia turpis sapien, eu tincidunt dui rutrum elementum. Maecenas dictum et metus eget aliquam. Sed imperdiet lacinia vulputate. Vivamus mauris arcu, faucibus
+                        pulvinar laoreet sed, scelerisque et dui.
+                    </p> -->
+
+                </section>
+            </main>
+            <pie></pie>
+        </div>
+    </div>
+    <script src="componentes.js"></script>
+</body>
+
+</html>
